@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+html {
+  @apply bg-black;
+  @apply text-white;
+  font-family: 'Cairo';
+  text-rendering: geometricPrecision;
+}
+
+h1 {
+  @apply mb-4;
+}
