@@ -78,6 +78,10 @@ const NavBar: React.FC<unknown> = () => {
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
     event.preventDefault();
+    /**
+     * @description if metamask is not found, show a meaningful message to user via
+     * via setNotification state and return (break executing the code)
+     */
     if (web3Status === Web3Status.NOT_FOUND) {
       setNotification({
         show: true,
