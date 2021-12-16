@@ -86,8 +86,8 @@ const NavBar: React.FC<unknown> = () => {
       setNotification({
         show: true,
         isError: true,
-        title: `Oops, Can't See Metamask Installed`,
-        description: `You need to have metamask installed to connect, For help visit our Discord`,
+        title: `Metamask not found`,
+        description: `Please install metamask and reload the page.`,
       });
       return;
     }
